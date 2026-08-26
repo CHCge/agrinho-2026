@@ -28,9 +28,9 @@ body {
 
 .menu-acessibilidade button {
     border: 1px solid white;
-    background: transparent;
+    background: #2e714b;
     color: white;
-    padding: 5px 8px;
+    padding: 6px 9px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
@@ -355,31 +355,105 @@ footer p {
 
 /* ALTO CONTRASTE */
 
+/* ==============================
+   ALTO CONTRASTE
+   ============================== */
+
 .alto-contraste {
     background: #000 !important;
     color: #fff !important;
 }
 
 .alto-contraste header,
-.alto-contraste footer,
+.alto-contraste footer {
+    background: #000 !important;
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
+}
+
 .alto-contraste .acessibilidade-info {
+    background: #000 !important;
+    color: #fff !important;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.alto-contraste .hero,
+.alto-contraste .secao,
+.alto-contraste .fontes {
     background: #000 !important;
     color: #fff !important;
 }
 
+.alto-contraste .destaque {
+    background: #000 !important;
+    color: #fff !important;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
 .alto-contraste .card,
 .alto-contraste .calculadora,
-.alto-contraste .lista-atitudes,
-.alto-contraste .lista-atitudes div,
+.alto-contraste .lista-atitudes div {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff;
+}
+
 .alto-contraste .quiz button {
     background: #000 !important;
     color: #fff !important;
     border: 2px solid #fff;
 }
 
-.alto-contraste a,
+.alto-contraste .quiz button:hover,
+.alto-contraste .quiz button:focus {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.alto-contraste .calculadora input {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff;
+}
+
+.alto-contraste .resultado {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff;
+}
+
 .alto-contraste .tag {
     color: #fff !important;
+}
+
+.alto-contraste a {
+    color: #fff !important;
+}
+
+.alto-contraste .botao {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff;
+}
+
+.alto-contraste .botao:hover,
+.alto-contraste .botao:focus {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.alto-contraste .menu-acessibilidade button {
+    background: #000 !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+}
+
+.alto-contraste .menu-acessibilidade button:hover,
+.alto-contraste .menu-acessibilidade button:focus {
+    background: #fff !important;
+    color: #000 !important;
 }
 
 
