@@ -1,1 +1,443 @@
+/* CONFIGURAÇÕES GERAIS */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f5f8f3;
+    color: #1d2b20;
+}
+
+
+/* ACESSIBILIDADE */
+
+.acessibilidade {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    display: flex;
+    gap: 6px;
+}
+
+.acessibilidade button {
+    border: none;
+    background: #173d2b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.acessibilidade button:hover,
+.acessibilidade button:focus {
+    background: #2e714b;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: #173d2b;
+    color: white;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    min-height: 75px;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 520px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.tag {
+    color: #2e714b;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p:not(.tag) {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-icon {
+    font-size: 12rem;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background: #2e714b;
+    color: white;
+    text-decoration: none;
+    border: none;
+
+    padding: 14px 24px;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover,
+.botao:focus {
+    background: #173d2b;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.secao h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.texto-central {
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+
+/* CARDS */
+
+.cards {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.icone {
+    font-size: 3rem;
+}
+
+
+/* DESTAQUE */
+
+.destaque {
+    background: #e6f0e5;
+    max-width: none;
+    padding-left: max(25px, calc((100% - 1100px) / 2));
+    padding-right: max(25px, calc((100% - 1100px) / 2));
+}
+
+
+/* LISTA */
+
+.lista-atitudes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.lista-atitudes div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lista-atitudes span {
+    font-size: 2rem;
+}
+
+
+/* CALCULADORA */
+
+.calculadora {
+    max-width: 600px;
+    margin-top: 35px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.calculadora label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.calculadora input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+
+    border: 2px solid #ccd7cd;
+    border-radius: 6px;
+
+    font-size: 1rem;
+}
+
+.calculadora input:focus {
+    outline: 3px solid #8db69a;
+}
+
+.calculadora .botao {
+    margin-top: 20px;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e6f0e5;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* QUIZ */
+
+.quiz {
+    max-width: 700px;
+    margin-top: 25px;
+}
+
+.quiz button {
+    display: block;
+    width: 100%;
+
+    margin: 10px 0;
+    padding: 15px;
+
+    border: 2px solid #2e714b;
+    background: white;
+    color: #1d2b20;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    text-align: left;
+    font-size: 1rem;
+}
+
+.quiz button:hover,
+.quiz button:focus {
+    background: #dcebdd;
+}
+
+#respostaQuiz {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* ACESSIBILIDADE */
+
+.acessibilidade-info {
+    background: #173d2b;
+    color: white;
+    max-width: none;
+    padding-left: max(25px, calc((100% - 1100px) / 2));
+    padding-right: max(25px, calc((100% - 1100px) / 2));
+}
+
+.acessibilidade-info .tag {
+    color: #b8dfc2;
+}
+
+
+/* FONTES */
+
+.fontes {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.fontes h2 {
+    margin-bottom: 10px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #10281c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ALTO CONTRASTE */
+
+.alto-contraste {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .acessibilidade-info {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.alto-contraste .card,
+.alto-contraste .calculadora,
+.alto-contraste .lista-atitudes,
+.alto-contraste .lista-atitudes div,
+.alto-contraste .quiz button {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff;
+}
+
+.alto-contraste a,
+.alto-contraste .tag {
+    color: #fff !important;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .acessibilidade {
+        top: 10px;
+        right: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-icon {
+        font-size: 7rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-atitudes {
+        grid-template-columns: 1fr;
+    }
+
+    .secao h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* FOCO PARA NAVEGAÇÃO POR TECLADO */
+
+button:focus,
+a:focus,
+input:focus {
+    outline: 3px solid #f1c40f;
+    outline-offset: 3px;
+}
