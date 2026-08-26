@@ -1,1 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Sustentabilidade em Ação | Agrinho 2026</title>
+
+    <meta name="description" content="Projeto Agrinho 2026 sobre sustentabilidade, tecnologia e atitudes para um futuro melhor.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAINEL DE ACESSIBILIDADE -->
+    <div class="acessibilidade">
+        <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+            A+
+        </button>
+
+        <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+            A-
+        </button>
+
+        <button onclick="altoContraste()" aria-label="Ativar alto contraste">
+            Contraste
+        </button>
+    </div>
+
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav aria-label="Menu principal">
+
+            <div class="logo">
+                🌱 Agrinho 2026
+            </div>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#energia">Energia</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-text">
+
+                <p class="tag">AGRINHO 2026 • DESENVOLVIMENTO FRONT-END</p>
+
+                <h1>
+                    Sustentabilidade em Ação
+                </h1>
+
+                <p>
+                    Pequenas atitudes podem transformar o nosso presente
+                    e ajudar a construir um futuro mais sustentável.
+                </p>
+
+                <a href="#sustentabilidade" class="botao">
+                    Conheça o projeto
+                </a>
+
+            </div>
+
+            <div class="hero-icon" aria-hidden="true">
+                🌎
+            </div>
+
+        </section>
+
+
+        <!-- SUSTENTABILIDADE -->
+        <section id="sustentabilidade" class="secao">
+
+            <p class="tag">CONHECIMENTO</p>
+
+            <h2>O que é sustentabilidade?</h2>
+
+            <p class="texto-central">
+                Sustentabilidade é buscar uma relação equilibrada entre
+                sociedade, economia e meio ambiente, utilizando os recursos
+                naturais de forma responsável para que também estejam
+                disponíveis para as próximas gerações.
+            </p>
+
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="icone">♻️</div>
+                    <h3>Reduzir o desperdício</h3>
+                    <p>
+                        Evitar desperdícios de água, energia e alimentos
+                        ajuda a preservar recursos naturais.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="icone">🌳</div>
+                    <h3>Preservar a natureza</h3>
+                    <p>
+                        A proteção das florestas, rios e animais contribui
+                        para o equilíbrio dos ecossistemas.
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="icone">💡</div>
+                    <h3>Usar tecnologia</h3>
+                    <p>
+                        A tecnologia pode ajudar a monitorar recursos,
+                        diminuir desperdícios e encontrar soluções.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ATITUDES -->
+        <section class="secao destaque">
+
+            <p class="tag">NO DIA A DIA</p>
+
+            <h2>Atitudes que fazem diferença</h2>
+
+            <div class="lista-atitudes">
+
+                <div>
+                    <span>💧</span>
+                    <p>Economizar água durante as atividades diárias.</p>
+                </div>
+
+                <div>
+                    <span>⚡</span>
+                    <p>Evitar deixar aparelhos ligados sem necessidade.</p>
+                </div>
+
+                <div>
+                    <span>🥕</span>
+                    <p>Evitar o desperdício de alimentos.</p>
+                </div>
+
+                <div>
+                    <span>🚲</span>
+                    <p>Priorizar formas de transporte menos poluentes quando possível.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALCULADORA -->
+        <section id="energia" class="secao">
+
+            <p class="tag">JAVASCRIPT</p>
+
+            <h2>Calculadora de consumo de energia</h2>
+
+            <p class="texto-central">
+                Descubra uma estimativa do consumo de um aparelho elétrico.
+                Informe a potência do aparelho e quanto tempo ele é utilizado.
+            </p>
+
+
+            <div class="calculadora">
+
+                <label for="potencia">
+                    Potência do aparelho (Watts)
+                </label>
+
+                <input
+                    type="number"
+                    id="potencia"
+                    placeholder="Ex.: 5500"
+                    min="1"
+                >
+
+
+                <label for="tempo">
+                    Tempo de uso por dia (minutos)
+                </label>
+
+                <input
+                    type="number"
+                    id="tempo"
+                    placeholder="Ex.: 30"
+                    min="1"
+                >
+
+
+                <button onclick="calcularEnergia()" class="botao">
+                    Calcular consumo
+                </button>
+
+                <div id="resultado" class="resultado" aria-live="polite">
+                    O resultado aparecerá aqui.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz" class="secao destaque">
+
+            <p class="tag">INTERATIVIDADE</p>
+
+            <h2>Quiz sustentável 🌱</h2>
+
+            <p>
+                Qual dessas atitudes contribui para a sustentabilidade?
+            </p>
+
+            <div class="quiz">
+
+                <button onclick="responderQuiz(false)">
+                    Deixar a torneira aberta sem necessidade
+                </button>
+
+                <button onclick="responderQuiz(true)">
+                    Economizar água e evitar desperdícios
+                </button>
+
+                <button onclick="responderQuiz(false)">
+                    Jogar resíduos em locais inadequados
+                </button>
+
+                <p id="respostaQuiz" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECNOLOGIA E IA -->
+        <section class="secao">
+
+            <p class="tag">TECNOLOGIA E REFLEXÃO</p>
+
+            <h2>Inteligência Artificial e sustentabilidade</h2>
+
+            <p class="texto-central">
+                A Inteligência Artificial pode auxiliar na agricultura,
+                na previsão de condições climáticas, no monitoramento
+                ambiental e na utilização mais eficiente de recursos.
+                Porém, também é importante considerar seu consumo de energia,
+                seus impactos ambientais e a necessidade de utilizar essa
+                tecnologia de forma responsável.
+            </p>
+
+        </section>
+
+
+        <!-- ACESSIBILIDADE -->
+        <section class="secao acessibilidade-info">
+
+            <p class="tag">INCLUSÃO</p>
+
+            <h2>Este site também pensa em acessibilidade ♿</h2>
+
+            <p>
+                A acessibilidade permite que mais pessoas consigam utilizar
+                e compreender um site. Por isso, este projeto possui recursos
+                como alteração do tamanho da fonte, alto contraste,
+                navegação organizada e textos alternativos.
+            </p>
+
+            <p>
+                Use os botões no canto superior da página para experimentar
+                os recursos de acessibilidade.
+            </p>
+
+        </section>
+
+
+        <!-- FONTES -->
+        <section class="fontes">
+
+            <h2>Fontes e créditos</h2>
+
+            <p>
+                Conteúdo elaborado para fins educacionais no projeto
+                Agrinho 2026.
+            </p>
+
+            <p>
+                As informações foram organizadas com base em conceitos
+                gerais de sustentabilidade, tecnologia e acessibilidade.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            🌱 Agrinho 2026 • Projeto de Desenvolvimento Front-End
+        </p>
+
+        <p>
+            Desenvolvido para fins educacionais.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
